@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+	margin:10px 20px;
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: success;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color:#008080;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>
+<body bgcolor="sky blue" align="center">
+<h1><strong>Login page</strong></h1><hr>
+<form action="login.jsp" get="POST">
+  <div class="mb-3">
+    <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  </div><br>
+  <div class="mb-3">
+    <label for="password" class="form-label"><strong>Password</strong></label>
+    <input type="password" placeholder="Enter password" name="password" required>  
+  </div><br>
+  <button type="submit" class="btn btn-sucess"><strong>Submit</strong></button>
+</form>
+<h3><a href="register.html">Register here</a></h3>
+</body>
+</html>

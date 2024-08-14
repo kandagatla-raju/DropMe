@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px; 
+    margin:60px; 
+  background-color: lightblue;  
+}  
+ table{
+ padding:20px;
+ border:2px;
+ } 
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="ShareMyRide.jsp" get="POST">  
+  <div class="container">  
+  <center><h1><strong>ShareMyRide</strong> </h1> </center>  
+  <hr>  
+  <table>
+  <tr>
+   <td><label for="email"><b>Email</b></label>  
+   <input type="text" placeholder="Enter Email" name="email" required></td> 
+   </tr>
+   <tr>
+   <td><label for="start"><b>Start</b></label>  
+   <input type="start" placeholder="Enter start location" name="start" required></td>  
+  
+   <td><label for="destiny"><b>Destiny</b></label>  
+   <input type="destiny" placeholder="destiny" name="destiny" required></td></tr> 
+    <tr><td>
+   <label for="date"><b>Date</b></label>  
+   <input type="date" placeholder="date" name="date" required></td> 
+    
+   <td><label for="time"><b>Time</b></label>  
+   <input type="time" placeholder="time" name="time" required></td></tr>  
+   <tr>
+   <td><label for="vehicle_no"><b>Vehicle_No</b></label>  
+   <input type="vehicle_no" placeholder="Vehicle_no" name="vehicle_no" required></td> 
+    
+   <td><label for="phone"><b>Phone</b></label>  
+   <input type="phone" placeholder="phone" name="phone" required></td></tr>
+    <tr>
+    <td><button type="submit" class="registerbtn">Register My Ride</button></td></tr>  
+    </table>  
+</form>
+
+<h4><a href="welcome.html">Back</a></h4>
+</body>  
+</html>  
